@@ -1,7 +1,7 @@
 const {expect}=require("@playwright/test")
 const {customtest} = require('../utils/Fixtures');
 
-//fixtures demo
+//data driven testing using fixtures
 
 customtest('fixtures demo',async({authenticatedPage, createOrder, testDataForOrder})=>{
     await authenticatedPage.goto('https://rahulshettyacademy.com/client/');
